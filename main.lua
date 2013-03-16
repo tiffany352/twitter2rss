@@ -191,7 +191,7 @@ for k, v in pairs(tab) do
                 v.user.protected and " - private" or "",
             }),
             tag('hr'),
-            tweet,
+            tweet:gsub("\n", tag('br')),
             tag('br'),
             v.source
         )}),
